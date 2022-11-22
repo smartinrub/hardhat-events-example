@@ -30,6 +30,8 @@ yarn hardhat run scripts/event-listener.ts --network localhost
 yarn hardhat run scripts/send.ts --network localhost
 ```
 
+You should see on the listener process something like: "Received message from 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 with message Hello Event!"
+
 ### Run Tests
 
 ```bash
