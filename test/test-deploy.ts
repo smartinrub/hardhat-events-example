@@ -1,5 +1,5 @@
 import { ethers } from "hardhat"
-import { expect, assert } from "chai"
+import { expect } from "chai"
 import { MyContract, MyContract__factory } from "../typechain-types"
 
 describe("MyContract", function () {
