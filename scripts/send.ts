@@ -6,8 +6,8 @@ async function main() {
     const myContractFactory = await ethers.getContractFactory("MyContract")
     const myContract = await myContractFactory.attach(CONTRACT_ADDRESS)
 
-    console.log(`Calling perform operation on contract ${CONTRACT_ADDRESS}`)
-    await myContract.performOperation("Hello Event!")
+    console.log(`Calling perform operation on contract: ${CONTRACT_ADDRESS}`)
+    await myContract.sendMessage("Hello Event!")
 }
 
 main().catch((error) => {

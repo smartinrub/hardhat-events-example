@@ -6,8 +6,8 @@ export default async function listen() {
     const myContractFactory = await ethers.getContractFactory("MyContract")
     const myContract = await myContractFactory.attach(CONTRACT_ADDRESS)
 
-    console.log(`Listening to events from contract ${CONTRACT_ADDRESS}`)
-    myContract.on("OperationPerformed", (sender, message) => {
+    console.log(`Listening to events from contract: ${CONTRACT_ADDRESS}`)
+    myContract.on("MessageSent", (sender, message) => {
         console.log(`Received message from ${sender} with message ${message}`)
     })
 }

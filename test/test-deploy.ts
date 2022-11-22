@@ -15,8 +15,8 @@ describe("MyContract", function () {
 
     it("Should emit event", async function () {
         let senders = await ethers.getSigners()
-        await expect(myContract.performOperation("Hello"))
-            .to.emit(myContract, "OperationPerformed")
-            .withArgs(await senders[0].getAddress(), "Hello")
+        await expect(myContract.sendMessage("foo"))
+            .to.emit(myContract, "MessageSent")
+            .withArgs(await senders[0].getAddress(), "foo")
     })
 })
