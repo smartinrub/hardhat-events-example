@@ -18,7 +18,7 @@ yarn hardhat run scripts/event-listener.ts --network localhost
 
 >Add the contract address to your `.env`. e.g. `CONTRACT_ADDRESS=0x5FbDB2315678afecb367f032d93F642f64180aa3`
 
-1. Start listening to events:
+3. Start listening to events:
 
 ```bash
 yarn hardhat run scripts/event-listener.ts --network localhost
