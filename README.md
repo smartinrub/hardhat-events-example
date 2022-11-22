@@ -16,8 +16,19 @@ yarn hardhat node
 yarn hardhat run scripts/event-listener.ts --network localhost
 ```
 
-Use the contract address on your `.env`.
+>Add the contract address to your `.env`. e.g. `CONTRACT_ADDRESS=0x5FbDB2315678afecb367f032d93F642f64180aa3`
 
+1. Start listening to events:
+
+```bash
+yarn hardhat run scripts/event-listener.ts --network localhost
+```
+
+4. Run the script that invokes the send message function.
+
+```bash
+yarn hardhat run scripts/send.ts --network localhost
+```
 
 ### Run Tests
 
